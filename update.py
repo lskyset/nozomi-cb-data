@@ -1,5 +1,4 @@
 import urllib.request
-import requests
 import os
 
 host = 'prd-priconne-redive.akamaized.net'
@@ -15,13 +14,13 @@ i = 0
 while i < max_test_amount:
     guess = ver + i * test_multiplier
     url = f'http://{host}{manifest_path % guess}'
-    response = requests.get(url)
-    if response.status_code == 200:
-        print(f'{i} OK {url}')
-        ver = guess
-        i = 0
-    else:
-        print(f'{i} NO {guess}')
+    try:
+        response = urllib.request.urlopen(url)
+        if response.code == 200:
+            ver = guess
+            i = 0
+    except urllib.error.HTTPError:
+        pass
     i += 1
 
 urllib.request.urlretrieve(f'http://{host}{masterdata_path % ver}', 'masterdata')
