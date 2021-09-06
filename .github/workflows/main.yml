@@ -22,15 +22,16 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
 
       # Runs a single command using the runners shell
-      - name: Test
-        run: echo "test" > test.txt
+      - name: Update db
+        run: python update.py
         
       - name: Commit
         run: |
           git config --global user.name "lskyset"
           git config --global user.email "lskyset@users.noreply.github.com"
           git add .
-          git commit -m "test"
+          git commit -m "%date% %time%"
           git push
