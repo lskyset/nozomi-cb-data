@@ -5,7 +5,7 @@ host = 'prd-priconne-redive.akamaized.net'
 manifest_path = '/dl/Resources/%s/Jpn/AssetBundles/iOS/manifest/manifest_assetmanifest'
 masterdata_path = '/dl/Resources/%s/Jpn/AssetBundles/Windows/manifest/masterdata_assetmanifest'
 bundles_path = '/dl/pool/AssetBundles'
-default_ver = 10031500
+default_ver = 10041300
 max_test_amount = 30
 test_multiplier = 10
 
