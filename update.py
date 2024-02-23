@@ -9,7 +9,7 @@ masterdata_path = (
     "/dl/Resources/%s/Jpn/AssetBundles/Windows/manifest/masterdata_assetmanifest"
 )
 bundles_path = "/dl/pool/AssetBundles"
-default_ver = 10053100
+default_ver = 10053700
 max_test_amount = 30
 test_multiplier = 10
 
@@ -37,7 +37,7 @@ with open("masterdata") as fd:
         f"http://{host}{bundles_path}/{hash_[:2]}/{hash_}", cdb_path
     )
 
-stream = os.popen(f"Coneshell_call.exe -cdb {cdb_path}")
+stream = os.popen(f"Coneshell_call.exe -cdb {cdb_path} {db_path}")
 output = stream.read()
 print(output)
 
@@ -62,7 +62,7 @@ def clean_db(conn: sqlite3.Connection, lookup: dict[str, dict]):
     ]
 
     for table in table_names:
-        if not lookup[table]["name"] in whitelist:
+        if not lookup.get(table, {}).get("name") in whitelist:
             continue
 
         query = ""
