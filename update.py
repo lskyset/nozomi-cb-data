@@ -1,5 +1,6 @@
 import json
 import os
+from shutil import copy
 import sqlite3
 import urllib.request
 
@@ -9,7 +10,7 @@ masterdata_path = (
     "/dl/Resources/%s/Jpn/AssetBundles/Windows/manifest/masterdata_assetmanifest"
 )
 bundles_path = "/dl/pool/AssetBundles"
-default_ver = 10053700
+default_ver = 10054900
 max_test_amount = 30
 test_multiplier = 10
 
@@ -31,8 +32,9 @@ urllib.request.urlretrieve(f"http://{host}{masterdata_path % ver}", "masterdata"
 
 cdb_path = "master.cdb"
 db_path = "master.db"
+db_raw_path = "master_raw.db"
 with open("masterdata") as fd:
-    hash_ = fd.readline().split(",")[1]
+    hash_ = fd.readline().split(",")[2]
     urllib.request.urlretrieve(
         f"http://{host}{bundles_path}/{hash_[:2]}/{hash_}", cdb_path
     )
@@ -43,6 +45,7 @@ print(output)
 
 os.remove("masterdata")
 os.remove("master.cdb")
+copy(db_path, db_raw_path)
 
 conn = sqlite3.connect(db_path)
 
@@ -59,6 +62,7 @@ def clean_db(conn: sqlite3.Connection, lookup: dict[str, dict]):
         "wave_group_data",
         "enemy_parameter",
         "clan_battle_period",
+        "unit_data",
     ]
 
     for table in table_names:
