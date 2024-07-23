@@ -63,6 +63,7 @@ def clean_db(conn: sqlite3.Connection, lookup: dict[str, dict]):
         "enemy_parameter",
         "clan_battle_period",
         "unit_data",
+        "unit_enemy_data",
     ]
 
     for table in table_names:
