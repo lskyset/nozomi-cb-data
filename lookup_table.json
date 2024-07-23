@@ -159,6 +159,16 @@
             "c7de3aba72715919fd04b1ca37d93b2563da3373f0472e27fc130e3ffdfd59f9": "banner_id_10"
         }
     },
+    "v1_9f587badaa55d861b54ea80dcd7b1648384231f7c749ba52c20728cbb851f76e": {
+        "name": "content_release_data",
+        "cols": {
+            "ad13bf412bcddd6d918bef58cd5cbf69fbb0e8f78b3cd481fdc5d272b666d382": "system_id",
+            "d2934758704eb6f40810f85c68a589dd04e0ea26739b53a66530a437f47d267c": "team_level",
+            "7ad814e3e4287c68d62f6e2b8353d69c825a6aa0a746f66846ea6c4cc8b43ce1": "story_id",
+            "2594870df7b0ea43b6ab91d6655a32f7cb342d6f6e8ce82ee8d1dad770b67b7f": "quest_id",
+            "e676a464f9b195a59e37e1b9cb5eab5af8f1569a976edca63a33f234ed49b7e7": "dialog"
+        }
+    },
     "v1_44a512abf6a1d6a720ea91da2fd0863110d10aa3f2b547b82d649dddf321aa38": {
         "name": "bg_data",
         "cols": {
@@ -1178,6 +1188,16 @@
             "47a88a6568cf8bfa52bcadda1524781cece6feb20140fb26129ff037c73c8bc1": "wave_bgm"
         }
     },
+    "v1_ee4039242821eda9cfbb7ad5367e9687b9165f3ef246da98804549d823a2135c": {
+        "name": "quest_annihilation",
+        "cols": {
+            "b194f662110edc90a4b2ba1997fb01c15b52b12b4acaa43dbb9fbd0228de49de": "system_id",
+            "4c9c5a5f1e541cdc460a451e2634f43294e88b6b8671acd37176c9f998fbfa88": "quest_id",
+            "a4d8245b79ce5884b3ef755c8bbbff813aa9c4b9fff33cf9054380f6c70e0ed6": "effect_type",
+            "442b6de9e2cabb1310703b07e050dcb49ed56a2acf2c9a87d6bdbadbf8a4f1af": "quest_effect_position",
+            "20513fe93e68db1c978549ae87a33f44399afc4a0d22368163c73d58ca7c97ed": "se_cue_name"
+        }
+    },
     "v1_454762bb7497a185bcd181ab65746ebe282fecb644eafc5c019c5e72f787a683": {
         "name": "dodge_tp_recovery",
         "cols": {
@@ -1619,6 +1639,24 @@
             "e34649b3f430cf1482151cee99c333b35a12d29cbfa611babd0268a477da160b": "chara_type_3"
         }
     },
+    "v1_38826d69bff108a9515e6456db1a103ea6eb0a3859ea30295e67e6c744a6be8c": {
+        "name": "unit_enemy_data",
+        "cols": {
+            "dff585369d13985c38375f23c3e04ac1c0dc9ce496a7850f73cd16edfaece5ef": "unit_id",
+            "e4de821514198914b437af696f2f8a7b0ed1db8386861b27fb7b94ae8249dea3": "unit_name",
+            "7d506669668eab7d1277e12136cbb98e799ca4b7dfabc7939e0b4ee84c5511dc": "prefab_id",
+            "7638c2d5c1158ae5f49f299de9f308460cad68805d77849b4a6d5b94d3386034": "motion_type",
+            "409940dd6c6ff948ebd022b1f17c509911da75695c32b568ac1c744d5da65985": "se_type",
+            "bec6f91c36880b6be44e5fce17e2eb58604d0ca549c04be66f73b1311fe24bf1": "move_speed",
+            "5b4affbe8d2f35a40a075093dc4dc65589cbba2cd260ba84acebdc6ac141fd76": "search_area_width",
+            "fef5eb51f63e7f8421a776ed371ebf2c597182954f9dfd11ecf47ee02c3490a4": "atk_type",
+            "3709e9f33b6f39b57a70e51e295154c0dfc80b6735f344ca85ff80ed57e80800": "normal_atk_cast_time",
+            "19b3686adf369508846b31790f7e562e58ebc37c62817129caa18c3116bf0399": "cutin",
+            "1ece389fdefc6b7c74a44dbbdd2dab818c72b03a28a11012ac70b1bb49a33e84": "cutin_star6",
+            "e55eaf6431f5d74a15aa98aacc3c6dfc70edb912270a93bd163d53af2452cae1": "visual_change_flag",
+            "d5d801f766c909b4a945ac70021f6dccf8acfc369a87498e070a561831ab3573": "comment"
+        }
+    },
     "v1_d65aa5a3e1078d1f8281b4e781646602744884b0f1f52f156d898c676e1f9020": {
         "name": "unit_skill_data",
         "cols": {
@@ -1895,6 +1933,45 @@
             "5edca292118606a1c96085e4e918337b0716e1ebdbb78e11bf46dbc27e98a9e7": "bg_name",
             "f85ce9daf0793799112df07a2b6967dec61b0fa1fe73c27cee84c19d3ac51ed9": "position",
             "70b679e32935b2905db0127e4fa66c96428436f55e74d669bfb088cdc5bea6f0": "face_type"
+        }
+    },
+    "v1_6784b85acacb0e7c70fdf5150e570c6fdee7c6af1be92e32cc73633250ce3317": {
+        "name": "guild",
+        "cols": {
+            "fba49835a702c81cc58d0e2e9abae6d66297b4796ad446243825f383a5e9268b": "guild_id",
+            "a1c48e197efcb9a6d2455933ff0d74de8ff7fdeb35e18bcfc62501150b23dc3f": "guild_name",
+            "feeffe41eb3235eacb277be9b5877b35d29a1da53a0d860da421c426b836dc8c": "description",
+            "1e1cee8e09b4d4b9762165a37252983c4f583e8742d8fde026d737905caef3cd": "guild_master",
+            "a97763223e8c3a0128e5d006a6ee24fb9cf9d371780406b48aabd679ad2f31b8": "member1",
+            "966264ee7bc908ea51421d498feae546e4c2016b2c44b4ad2ae5aad07958209c": "member2",
+            "6fec13c598e52edb36de455da7b82571882792dd8ac6a94bf7345da74562efe5": "member3",
+            "37991a905b2dca00857d2aec9978e08a43953301a4fa9f4efa3bc67502fa16a5": "member4",
+            "0b50cf5a1fe303b6a399fd1c3f34f6b2b1cbf3fddd338f6b90524941a4fa93ea": "member5",
+            "7eac9cee4a18ba97c1be5a38516bb46688f8223e0441e3dec45eba0ccd033949": "member6",
+            "71be3d3a75722ad2de673679ebd54096323673a514fc09a37614c5472a4f0274": "member7",
+            "f4120f562fad7fe3c234cf7729732ceb4635efccc37ca592eb69eb824b57c910": "member8",
+            "de1dd209bc54d2e374c4b5ab4ba4ce6af8c89974ca8ddd2c654fff88a6f4e865": "member9",
+            "391b36d55cc2368eeb1bfa1fd992e63c8066e128522b0a223e10b18b95b2a289": "member10",
+            "d0f4cec7d3652666c087eb87a925f0954d7c0687b687aa5ce4587bb2c6f94a73": "member11",
+            "49adffc0e5899cab0d2dbd190800f9c7411beca3e481a5637e5620fd924cc923": "member12",
+            "fff42a78348d876163e35216ff589f8b7f155ddf305c00d1b058734f4ca04c1e": "member13",
+            "828dd7b473b92242b9b56345d8a8e2c93ff94f73d249784994f2bb2cc1387924": "member14",
+            "5721572bc3a49b2758434f1b5eb795e47d397345bda38e0adb54e62f460690d5": "member15",
+            "ed7b00b38747686bdae114475c3101db85713926f2acc4b983abd2a38803a2ae": "member16",
+            "6a413f695473dd07be05b77043bb18018a5fc003821ae2050c911aef43087445": "member17",
+            "24b70418fb75d907fc0842dacfd53b249d0e242f6e4922d92530a9948f0c0496": "member18",
+            "dc14790fae7b328db107cd9bb278083b14914796c1788946bf6a4f16931e8c82": "member19",
+            "c847b0191f2a741a1fcdb6deed0a588f8fff1f951f13dadc2304705517662936": "member20",
+            "fdf35a1714837479ce5bfa567523feb3843d63cd6e18100c601def2b4a09c818": "member21",
+            "ebdd3ca2f9f7ab2876f61e98a9a3c058d40ded73bb97964d2c4996237fa6f645": "member22",
+            "6a82f2f483fd92766977bc693b73f329eb501f298c5f82b4b2881ac5670452f5": "member23",
+            "67cf2bd9f9c461fb825590221c558f0f90dbfbd6c191e4c1bd92507d989750d3": "member24",
+            "97c408385e4c6250481ec74db856ebfe00341eaf16c0416ba4c77564729417d2": "member25",
+            "3f8702d2001ea4e45f104933168b1bc1c2c8560ceff2d7144f9df3c017d2c2d9": "member26",
+            "07d9396750b190be4f41d7268d243da004c97488c65dfb9ed1781961de27f819": "member27",
+            "49c56d944dff7581070765cc58a906fef02830d8a3fa43d3654671b09335b76f": "member28",
+            "002aef40b9c28bb067a56740dff26ac6509b27bd0d3622c3559acb28748db9ee": "member29",
+            "021ee89f1f78e827c285d4d02251288a43ed553c83bd8c1ac419e31a91fa323f": "member30"
         }
     },
     "v1_9e3eff1590a64bb33d86e799c5e5cf7cd07a1c3ddaf66f87a82784a5fa214e7e": {
@@ -5862,18 +5939,6 @@
             "4764ba56e33e636dd902dc12e008d1b87ebad2dad10e89379cf475bc10e67c77": "condition_boss_id"
         }
     },
-    "v1_afe40c1118599f6aba5bed7bc4b96c91f34047204026b9bc752720d31ade1913": {
-        "name": "lsv_story_data",
-        "cols": {
-            "5497de56eb767f684fcad282c8eb524674310df9cd3da7ba12a620240af7f568": "sub_story_id",
-            "8947b9bb6c2e82a9f7bbe0c01e9b95ae8dbd24e2e4c1bc1b50aaaadbd74c36af": "original_event_id",
-            "7e4f515467395da1c7540a8531a53cb92882094a5a83a89ee4c473c9bc81079d": "title",
-            "77640f3b766e4db0c7922d3bd38028d91925128f579a542839cad13d16456eea": "time_condition",
-            "e3855dc6f948a885dfb7616fcdb83b8a3847c9473cc9c19d5aca746ab2ae63c1": "condition_quest_id",
-            "de7c155aa7e65a00141e128f1e00d6718b1621ee726f38d94f345c2454edb19e": "read_event_story_id",
-            "7a8324bb6a679bdfd47db61515f83339fa0b5fcfa149d248ab5fb143f6cdcbde": "read_condition"
-        }
-    },
     "v1_dd950e007934169174162cbae2406494b5495e9ead9df722a652585bc9d0a3e2": {
         "name": "lsv_drama_script",
         "cols": {
@@ -6003,19 +6068,6 @@
             "00f10d18be4890d063272a58ff2d933ef64dfb4b868f9e85a3ec608d0288e642": "change_face_time",
             "f58e10792362db2f464eb976be54d3c062d56c9aab869bbe633c1049d9908131": "change_face_type",
             "f384a58745410a049964217fcaf78dbc1ab77699e401482b8d2d01a9f9928dd9": "original_event_id"
-        }
-    },
-    "v1_22e6d7d261298cf2dc9cc3038198f5f8ef1e99985c1de6f66d7aa744aa9bb60f": {
-        "name": "wts_story_data",
-        "cols": {
-            "48128b84b14fa9137b646c6b8a5e2dd0eb3a008f27fc7ca61b8a8b2b28b5d196": "sub_story_id",
-            "5e606104e9a956e9eb58a1d7acb23bfa9b55d971214e109ebf81e045b120ac03": "repeat_story_id",
-            "80d636b65c9eef9ffca7d45551161f5fe28a4caefc4ef144e2497739b6695484": "original_event_id",
-            "0e60930e4ed524897c022b8112bc32efb5bce8b25ef8db6fb9047dc3878fb441": "title",
-            "e5e29874c1d1bc3d6aa161abca992c8494f9245610bc4d4459a85c10159220b5": "condition_quest_id",
-            "85a77b9414cb50ea1c8ed3d81435a16ec311d435db26b19ba0fcf3d7859f3bbd": "reward_type",
-            "aaaf72d4c9278cbd42723754457a2bebb3b3d9e9fcc9e018ed4178e966dd58ef": "reward_id",
-            "c422594ee77fd90dcbb78ee61681bbbb31f9514b9fd4cd862f61ec90d06b252b": "reward_count"
         }
     },
     "v1_30a2e9319a772412eca4b2a2c0f867bddd8884e8a316a18da520393140a2cf1a": {
