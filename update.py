@@ -11,7 +11,7 @@ masterdata_path = (
 )
 bundles_path = "/dl/pool/AssetBundles"
 default_ver = 10061500
-max_test_amount = 30
+max_test_amount = 3
 test_multiplier = 10
 
 ver = default_ver
