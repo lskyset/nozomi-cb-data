@@ -10,7 +10,7 @@ masterdata_path = (
     "/dl/Resources/%s/Jpn/AssetBundles/Windows/manifest/masterdata_assetmanifest"
 )
 bundles_path = "/dl/pool/AssetBundles"
-default_ver = 10061500
+default_ver = 10062120
 max_test_amount = 3
 test_multiplier = 10
 
