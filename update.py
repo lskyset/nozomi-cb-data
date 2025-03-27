@@ -10,8 +10,8 @@ masterdata_path = (
     "/dl/Resources/%s/Jpn/AssetBundles/Windows/manifest/masterdata_assetmanifest"
 )
 bundles_path = "/dl/pool/AssetBundles"
-default_ver = 10062120
-max_test_amount = 3
+default_ver = 10062600
+max_test_amount = 30
 test_multiplier = 10
 
 ver = default_ver
@@ -27,7 +27,7 @@ while i < max_test_amount:
     except urllib.error.HTTPError:
         pass
     i += 1
-
+print(ver)
 urllib.request.urlretrieve(f"http://{host}{masterdata_path % ver}", "masterdata")
 
 cdb_path = "master.cdb"
